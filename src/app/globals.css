@@ -2,32 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+html , body ,.root{
+ 
+   background-color: rgb(245, 243, 243);
+   height: 100%;
+} 
+
+/* styles/animations.css */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  95% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.animate-slide-in {
+  animation: slideInFromLeft 0.5s ease-out forwards;
 }
 
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(10px);
+  }
+
+  95% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-top{
+  animation: slideInFromTop 0.5s ease-out forwards;
+}
+
+.text-btn {
+  letter-spacing: 0;
+  transition: letter-spacing 0.5s ease-in-out;
+}
+
+.text-btn:hover {
+  letter-spacing: 2px; /* Adjust as needed */
+}
+
+.image-min-size{
+min-width: 500px;
+min-height: 300px;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
