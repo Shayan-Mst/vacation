@@ -1,5 +1,6 @@
 import Image from "next/image";
 import welcome from "./../../public/welcome.jpg"
+import Link from "next/link";
 
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
  
 </div>
 <div className='text-center'>
-<button className='w-full bg-gray-100 shadow-lg p-4 rounded-lg my-16 font-bold md:w-1/2  sm:w-2/3'>Explore</button>
+<Link href='/login'><button className='w-full bg-gray-300 shadow-lg p-4 rounded-lg my-16 font-bold md:w-1/2  sm:w-2/3'>Explore</button></Link>
 </div>
 </div>
        </div>
@@ -37,7 +38,7 @@ export default function Home() {
         </div>
         <div className="h-full m-0 animate-slide-top hidden lg:block">
   <div className="flex items-center justify-around h-full">
-  <div className="w-1/2 mx-12">
+  <div className="w-1/2 mr-12">
   <picture ><Image className='rounded-full image-min-size' src={welcome} alt='travel' priority ></Image></picture>
  
 </div>
@@ -45,7 +46,7 @@ export default function Home() {
 
     <div className="text-4xl font-bold  mt-14">Discover Your Next</div>
 <div className=" text-md  mt-8 text-wrap">Explore new destinations and create unforgettable memories. Whether you're seeking adventure in the mountains, relaxation on pristine beaches, the world is waiting to be discovered!</div>
-    <button className=' bg-gray-100 shadow-lg p-4 rounded-lg my-16 font-bold lg:w-1/2 text-btn'>Explore</button>
+    <Link href='/login'><button className=' bg-gray-300 shadow-lg p-4 rounded-lg my-16 font-bold lg:w-1/2 text-btn'>Explore</button></Link>
 
     </div>
 

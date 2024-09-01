@@ -22,6 +22,7 @@ html , body ,.root{
    height: 100%;
 } 
 
+/*intro page*/
 /* styles/animations.css */
 @keyframes slideInFromLeft {
   0% {
@@ -80,6 +81,154 @@ html , body ,.root{
 min-width: 500px;
 min-height: 300px;
 }
+
+/*login page*/
+
+
+.img-background{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+}
+.img-rnd{
+
+  border-radius: 50%;
+  transition: transform 0.3s ease-out;
+
+}
+.img-rnd:hover{
+  transform: scale(1.05);
+}
+@keyframes flipIn {
+  from {
+    transform: rotateY(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+
+.login-container{
+
+  width: 400px;
+  border-radius: 15px;
+  z-index: 1000;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: flipIn 1.5s forwards; /* Animation applied here */
+}
+
+.login-content {
+ 
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.3s ease; /* Smooth transition effect */
+  outline: none;
+
+}
+
+.form-group input:focus {
+  border-color: #6a1b9a; /* Purple border color on focus */
+  box-shadow: 0 0 0 2px rgba(107, 89, 229, 0.8); /* Purple glow effect */
+}
+.login-btn {
+  width: 60px;
+  padding: 10px;
+  background-color: #6a1b9a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out,opacity 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.login-btn:hover {
+ opacity: 0.9;
+ width: 100px;
+}
+
+
+@keyframes moveLetter {
+  0%, 90% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes blinkLetter {
+  0%, 90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animated-text span {
+  display: inline-block;
+  position: relative;
+  animation: moveLetter 5s infinite , blinkLetter 5s infinite;
+}
+
+/* Target specific letters */
+.animated-text span:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.animated-text span:nth-child(2) {
+  animation-delay: 2s;
+}
+
+
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
