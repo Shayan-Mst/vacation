@@ -106,6 +106,7 @@ min-height: 300px;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
 }
+
 .img-rnd{
 
   border-radius: 50%;
@@ -269,6 +270,23 @@ min-height: 300px;
 @keyframes l15{ 
   100%{transform: rotate(1turn)}
 }
+
+
+/* home page */
+
+.top-bar{
+
+ background-image: url('/sea.jpg');
+ background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent background color */
+ background-blend-mode:lighten;
+ background-size:cover; /* Makes sure the image covers the entire div */
+  background-position:top; /* Centers the image */
+  height: 200px;
+  width: 100%;
+  padding: 15px;
+
+}
+
 
 @layer utilities {
   .text-balance {
