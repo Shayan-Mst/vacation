@@ -290,8 +290,9 @@ min-height: 300px;
 /* navigation */
 
 .selected{
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Fades the shadow upwards */
- 
+  
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Fades the shadow upwards */
+  transform: scale(1.2);
   
 }
 
