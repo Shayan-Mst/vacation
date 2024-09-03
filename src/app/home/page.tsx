@@ -4,7 +4,7 @@ import Navigation from '@/components/navigation'
 
 const page = () => {
   return (
-    <div className='h-full'>
+    <div className='h-full bg-gray-200'>
 
 <div className='relative top-bar'>
     {/* <Image src={desert} alt='desert' className='w-full h-full object-cover absolute z-0'></Image> */}
@@ -30,6 +30,8 @@ const page = () => {
     <span className='text-2xl'>Explore tour packages</span>
 </div>
 </div>
+
+<div style={{borderRadius:'25px'}}></div>
 
 <Navigation/>
     </div>
