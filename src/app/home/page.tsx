@@ -1,6 +1,6 @@
-import Image from 'next/image'
+
 import React from 'react'
-import desert from './../../../public/boat.jpg'
+import Navigation from '@/components/navigation'
 
 const page = () => {
   return (
@@ -26,11 +26,12 @@ const page = () => {
 </div>
 
 <div className='font-bold mx-2 my-8'>
-    <span className='block'>Welcome , Traveler !</span>
+    <span className='block mb-2'>Welcome , Traveler !</span>
     <span className='text-2xl'>Explore tour packages</span>
 </div>
 </div>
 
+<Navigation/>
     </div>
   )
 }
