@@ -31,7 +31,7 @@ const page = () => {
 <div className='font-bold mx-2 my-8 md:text-center'>
     <span className='block mb-2 md:hidden'>Welcome , Traveler !</span>
     <span className='text-2xl md:hidden'>Explore tour packages</span>
-    <span className='lg:text-8xl md:text-7xl hidden md:block'>Dream Vacation</span>
+    <span className='lg:text-7xl md:text-6xl hidden md:block'>Dream Vacation</span>
   
 </div>
 <div className='w-full my-8 hidden md:grid'>
@@ -57,7 +57,7 @@ const page = () => {
 
 </div>
 
-<div className='h-full' style={{borderRadius:'25px'}}>
+<div>
   <div className='w-full my-8 md:hidden'>
 <div className="search-container sm:w-2/3 mx-auto">
     <input type="text" className="search-input" placeholder="Search for destination or tour"/>
@@ -79,7 +79,7 @@ const page = () => {
 </div>
 </div>
 <div className="w-full p-4">
-  <div className='my-6'>
+  <div className='my-4'>
   <span className='font-bold lg:px-6 text-2xl'>Featured Tours</span>
   </div>
   <div className="flex flex-col sm:flex-col md:flex-row gap-4">
