@@ -114,6 +114,8 @@ const page = () => {
     </div>
   </div>
   </div>
+
+  <div className='p-4'>
   <div className='my-6'>
   <span className='font-bold lg:px-6 text-2xl'>Popular Destinations</span>
   </div>
@@ -154,6 +156,7 @@ const page = () => {
         <p className='text-sm'>Tropical Haven 19/30/2024</p>
       </figcaption>
     </figure>
+  </div>
   </div>
 </div>
 
