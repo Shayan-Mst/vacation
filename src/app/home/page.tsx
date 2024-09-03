@@ -4,6 +4,10 @@ import Navigation from '@/components/navigation'
 import Image from 'next/image'
 import ocean from './../../../public/ocean.jpg'
 import mountain from './../../../public/mountain.jpg'
+import trail from "./../../../public/trail.jpg"
+import leopard from './../../../public/leopard.jpg'
+import village from './../../../public/village.jpg'
+import neon from './../../../public/neon.jpg'
 
 const page = () => {
   return (
@@ -28,14 +32,14 @@ const page = () => {
 
 </div>
 
-<div className='font-bold mx-2 my-8 md:text-center'>
-    <span className='block mb-2 md:hidden'>Welcome , Traveler !</span>
-    <span className='text-2xl md:hidden'>Explore tour packages</span>
-    <span className='lg:text-7xl md:text-6xl hidden md:block'>Dream Vacation</span>
+<div className='font-bold mx-2 my-8 text-center'>
+    {/* <span className='block mb-2 md:hidden'>Welcome , Traveler !</span>
+    <span className='text-2xl md:hidden'>Explore tour packages</span> */}
+    <span className='lg:text-7xl md:text-6xl sm:text-5xl text-4xl'>Dream Vacation</span>
   
 </div>
-<div className='w-full my-8 hidden md:grid'>
-<div className="search-container md:w-1/2 lg:w-2/5 xl:w-1/3 mx-auto">
+<div className='w-full my-8 grid'>
+<div className="search-container w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/3 mx-auto">
     <input type="text" className="search-input" placeholder="Search for destination or tour"/>
     <button className="search-button">
     <svg className="search-icon" fill="#ffffff" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
@@ -58,7 +62,7 @@ const page = () => {
 </div>
 
 <div>
-  <div className='w-full my-8 md:hidden'>
+  {/* <div className='w-full my-8 md:hidden'>
 <div className="search-container sm:w-2/3 mx-auto">
     <input type="text" className="search-input" placeholder="Search for destination or tour"/>
     <button className="search-button">
@@ -77,12 +81,13 @@ const page = () => {
 </svg>
     </button>
 </div>
-</div>
-<div className="w-full p-4">
+</div> */}
+<div className="w-full">
+  <div className='bg-gray-300 p-4'>
   <div className='my-4'>
   <span className='font-bold lg:px-6 text-2xl'>Featured Tours</span>
   </div>
-  <div className="flex flex-col sm:flex-col md:flex-row gap-4">
+  <div className=" flex flex-col sm:flex-col md:flex-row gap-4 mb-8 ">
     
     
     <div className="p-0 lg:p-6 flex-1">
@@ -107,6 +112,48 @@ const page = () => {
       <button className='bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-lg'>Book</button>
     </div>
     </div>
+  </div>
+  </div>
+  <div className='my-6'>
+  <span className='font-bold lg:px-6 text-2xl'>Popular Destinations</span>
+  </div>
+
+  <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+    
+    <figure className="figure-container">
+      <Image src={leopard} alt='leopard'></Image>
+      <figcaption className="figure-caption">
+        <h2 className="text-md font-bold">Natures's Call</h2>
+        <p className='text-sm'>Wildness Lodge 19/09/2024</p>
+      </figcaption>
+    </figure>
+    
+ 
+    <figure className="figure-container">
+    <Image src={neon} alt='leopard'></Image>
+      <figcaption className="figure-caption">
+        <h2 className="text-md font-bold">Neon Nightscape</h2>
+        <p className='text-sm'>Metropolis Plaza 22/09/2024</p>
+      </figcaption>
+    </figure>
+    
+    
+    <figure className="figure-container">
+    <Image src={village} alt='leopard'></Image>
+      <figcaption className="figure-caption">
+        <h2 className="text-md font-bold">Persian Culture</h2>
+        <p className='text-sm'>Ancient Village 23/09/2024</p>
+      </figcaption>
+    </figure>
+    
+   
+    <figure className="figure-container">
+    <Image src={trail} alt='leopard'></Image>
+      <figcaption className="figure-caption">
+        <h2 className="text-md font-bold">Azure Paradise</h2>
+        <p className='text-sm'>Tropical Haven 19/30/2024</p>
+      </figcaption>
+    </figure>
   </div>
 </div>
 
