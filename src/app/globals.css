@@ -20,6 +20,7 @@ html , body ,.root{
  
    background-color: rgb(245, 243, 243);
    height: 100%;
+   
 } 
 
 /*intro page*/
@@ -297,6 +298,7 @@ min-height: 300px;
 
 /* navigation */
 
+
 .selected{background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Fades the shadow upwards */}
 
 @keyframes shake {
@@ -365,8 +367,8 @@ min-height: 300px;
   image-rendering: crisp-edges; /* For pixelated images (like icons) */
   image-rendering: pixelated;   /* For a pixelated effect */
   background-position: center;
+  
 }
-
 
 
 

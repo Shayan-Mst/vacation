@@ -7,7 +7,7 @@ import mountain from './../../../public/mountain.jpg'
 
 const page = () => {
   return (
-    <div className='h-full bg-gray-200'>
+    <div className='bg-gray-200'>
 
 <div className='relative top-bar'>
     {/* <Image src={desert} alt='desert' className='w-full h-full object-cover absolute z-0'></Image> */}
@@ -80,29 +80,29 @@ const page = () => {
 </div>
 <div className="w-full p-4">
   <div className='my-6'>
-  <span className='font-bold text-xl'>Featured Tours</span>
+  <span className='font-bold lg:px-6 text-2xl'>Featured Tours</span>
   </div>
   <div className="flex flex-col sm:flex-col md:flex-row gap-4">
     
     
-    <div className="p-0 md:p-6 flex-1">
+    <div className="p-0 lg:p-6 flex-1">
     <div className='w-full'><Image className='feat-tour-img' src={mountain} alt='first tour'></Image></div>
     <div className='flex items-center my-5 w-full justify-between'>
       <div className='inline'>
       <h2 className="text-xl font-bold mb-4">Majestic Peaks (SW)</h2>
-      <p className="text-gray-600 font-semibold">Summit Sanctuary 17/08/2024</p>
+      <p className="text-gray-600 font-semibold text-sm">Summit Sanctuary 17/08/2024</p>
       </div>
       <button className='bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-lg'>Book</button>
     </div>
     
     </div>
     
-    <div className="p-0 md:p-6 flex-1">
+    <div className="p-0 lg:p-6 flex-1">
     <div className='w-full'><Image className='feat-tour-img' src={ocean} alt='first tour'></Image></div>
     <div className='flex items-center my-5 w-full justify-between'>
       <div className='inline'>
       <h2 className="text-xl font-bold mb-4">Coastal Bliss (ITA)</h2>
-      <p className="text-gray-600 font-semibold">Sunset Resort  11/08/2024</p>
+      <p className="text-gray-600 font-semibold text-sm">Sunset Resort  11/08/2024</p>
       </div>
       <button className='bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-lg'>Book</button>
     </div>
