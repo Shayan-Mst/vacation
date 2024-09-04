@@ -1,4 +1,5 @@
 
+"use client"
 import React from 'react'
 import Navigation from '@/components/navigation'
 import Image from 'next/image'
@@ -8,58 +9,26 @@ import trail from "./../../../public/trail.jpg"
 import leopard from './../../../public/leopard.jpg'
 import village from './../../../public/village.jpg'
 import neon from './../../../public/neon.jpg'
+import welcome from './../../../public/welcome.jpg'
+import boat from './../../../public/boat.jpg'
+import bg from './../../../public/bg-login.jpg'
+import { useRouter } from "next/navigation"
+import Topbar from '@/components/Topbar'
 
 const page = () => {
+
+   const navigation  = useRouter();
+
+   function Navigate(){
+
+    navigation.push("/popular-destination")
+
+   }
+
   return (
     <div className='bg-gray-200'>
 
-<div className='relative top-bar'>
-    {/* <Image src={desert} alt='desert' className='w-full h-full object-cover absolute z-0'></Image> */}
-    
-
-<div className=' z-10 relative flex justify-between'>
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="black" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-     className="feather feather-menu">
-  <line x1="3" y1="12" x2="21" y2="12"></line>
-  <line x1="3" y1="6" x2="21" y2="6"></line>
-  <line x1="3" y1="18" x2="21" y2="18"></line>
-</svg>
-
-<svg width="30" height="30"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-user">
-  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-  <circle cx="12" cy="7" r="4"></circle>
-</svg>
-
-</div>
-
-<div className='font-bold mx-2 my-8 text-center'>
-    {/* <span className='block mb-2 md:hidden'>Welcome , Traveler !</span>
-    <span className='text-2xl md:hidden'>Explore tour packages</span> */}
-    <span className='lg:text-7xl md:text-6xl sm:text-5xl text-4xl'>Dream Vacation</span>
-  
-</div>
-<div className='w-full my-8 grid'>
-<div className="search-container w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/3 mx-auto">
-    <input type="text" className="search-input" placeholder="Search for destination or tour"/>
-    <button className="search-button">
-    <svg className="search-icon" fill="#ffffff" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
-
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-
-<g id="SVGRepo_iconCarrier">
-
-<path d="M10.035,18.069a7.981,7.981,0,0,0,3.938-1.035l3.332,3.332a2.164,2.164,0,0,0,3.061-3.061l-3.332-3.332A8.032,8.032,0,0,0,4.354,4.354a8.034,8.034,0,0,0,5.681,13.715ZM5.768,5.768A6.033,6.033,0,1,1,4,10.035,5.989,5.989,0,0,1,5.768,5.768Z"/>
-
-</g>
-
-</svg>
-    </button>
-</div>
-</div>
-
-</div>
+<Topbar/>
 
 <div>
   {/* <div className='w-full my-8 md:hidden'>
@@ -85,7 +54,7 @@ const page = () => {
 <div className="w-full">
   <div className='bg-gray-300 p-4'>
   <div className='my-4'>
-  <span className='font-bold lg:px-6 text-2xl'>Featured Tours</span>
+  <span className='font-bold lg:px-6 text-2xl'><span className='text-purple-700'>Featured </span> Tours</span>
   </div>
   <div className=" flex flex-col sm:flex-col md:flex-row gap-4 mb-8 ">
     
@@ -117,21 +86,21 @@ const page = () => {
 
   <div className='p-4 mb-6'>
   <div className='my-6'>
-  <span className='font-bold lg:px-6 text-2xl'>Popular Destinations</span>
+  <span className='font-bold lg:px-6 text-2xl'><span className='text-purple-700'>Popular </span> Destinations</span>
   </div>
 
-  <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+  <div  className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4">
     
-    <figure className="figure-container">
+    <figure onClick={Navigate} className="figure-container">
       <Image  src={leopard} alt='leopard'></Image>
       <figcaption className="figure-caption">
         <h2 className="text-md font-bold">Natures's Call</h2>
-        <p className='text-sm'>Wildness Lodge 19/09/2024</p>
+        <p className='text-sm'>Wildness Lodge 19/07/2024</p>
       </figcaption>
     </figure>
     
  
-    <figure className="figure-container">
+    <figure onClick={Navigate} className="figure-container">
     <Image src={neon} alt='leopard'></Image>
       <figcaption className="figure-caption">
         <h2 className="text-md font-bold">Neon Nightscape</h2>
@@ -140,7 +109,7 @@ const page = () => {
     </figure>
     
     
-    <figure className="figure-container">
+    <figure onClick={Navigate} className="figure-container">
     <Image src={village} alt='leopard'></Image>
       <figcaption className="figure-caption">
         <h2 className="text-md font-bold">Persian Culture</h2>
@@ -149,13 +118,38 @@ const page = () => {
     </figure>
     
    
-    <figure className="figure-container">
+    <figure onClick={Navigate} className="figure-container">
     <Image src={trail} alt='leopard'></Image>
       <figcaption className="figure-caption">
         <h2 className="text-md font-bold">Azure Paradise</h2>
         <p className='text-sm'>Tropical Haven 19/01/2024</p>
       </figcaption>
     </figure>
+
+    <figure onClick={Navigate}  className="figure-container">
+    <Image src={welcome} alt='leopard'></Image>
+      <figcaption className="figure-caption">
+        <h2 className="text-md font-bold">Walking Journey</h2>
+        <p className='text-sm'>No Room For Lazy 5/04/2025</p>
+      </figcaption>
+    </figure>
+
+    <figure onClick={Navigate} className="figure-container">
+    <Image src={boat} alt='leopard'></Image>
+      <figcaption className="figure-caption">
+        <h2 className="text-md font-bold">Ocean Island</h2>
+        <p className='text-sm'>Boats Cars 17/02/2025</p>
+      </figcaption>
+    </figure>
+
+    <figure onClick={Navigate} className="figure-container lg:col-span-2 md:col-span-2">
+    <Image src={bg} alt='leopard'></Image>
+      <figcaption className="figure-caption">
+        <h2 className="text-md font-bold">Cliffy Forest</h2>
+        <p className='text-sm'>Canada Unseen 1/01/2024</p>
+      </figcaption>
+    </figure>
+   
   </div>
   </div>
 
@@ -186,6 +180,13 @@ const page = () => {
   <span className="tag">Desert</span>
   <span className="tag">Waterfall</span>
   <span className="tag">Island</span>
+  <span className="tag">Paradise</span>
+  <span className="tag">Unseen</span>
+  <span className="tag">Nature</span>
+  <span className="tag">Cleaning</span>
+  <span className="tag">Earth</span>
+  <span className="tag">Animals</span>
+  <span className="tag">Concerts</span>
    
   </div>
   </div>
