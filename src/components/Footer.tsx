@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       
       
-      <div className='text-center sm:text-justify justify-center grid'>
+      <div className='text-center md:text-justify justify-center grid'>
         <h3 className="text-lg font-bold mb-4">Quick Links</h3>
         <ul>
           <li className="mb-2"><a href="#" className="">Home</a></li>
@@ -22,7 +22,7 @@ const Footer = () => {
     
      
     
-      <div className='text-center sm:text-justify justify-center grid'>
+      <div className='text-center md:text-justify justify-center grid'>
       <h3 className="text-lg font-bold mb-4">About Us</h3>
         <ul>
           <li className="mb-2"><a href="#" className="">Our Story</a></li>
@@ -32,7 +32,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className='text-center sm:text-justify justify-center grid'>
+      <div className='text-center md:text-justify justify-center grid'>
         <h3 className="text-lg font-bold mb-4">Contact Us</h3>
         <p className=" mb-2">Email: info@travelworld.com</p>
         <p className=" mb-2">Phone: +123 456 7890</p>

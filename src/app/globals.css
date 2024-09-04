@@ -296,7 +296,11 @@ min-height: 300px;
   .top-bar{
     height: 300px;
   }
+
+ 
 }
+
+
 
 /* navigation */
 
@@ -501,9 +505,32 @@ transform: scale(1.02);
   width: 100%;
   height: 470px;
   object-fit:cover;
-  
-  border-radius: 2px;
+
 }
+
+.iran-smaller{
+  background-image: url('/iransvg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.iran-bigger{
+
+ 
+  
+  background-image: url('/iranbigger.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+@media screen and (max-width:1024px) {
+  .iran-bigger{
+
+    height: 450px;
+  }
+}
+
 
 @layer utilities {
   .text-balance {
