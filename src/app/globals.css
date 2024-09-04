@@ -19,7 +19,7 @@
 html , body ,.root{
  
    background-color: rgb(245, 243, 243);
-
+  height: 100%;
    
 } 
 
@@ -367,7 +367,12 @@ min-height: 300px;
   image-rendering: crisp-edges; /* For pixelated images (like icons) */
   image-rendering: pixelated;   /* For a pixelated effect */
   background-position: center;
+  transition: transform 0.3s ease-in-out;
   
+}
+
+.feat-tour-img:hover{
+transform: scale(1.02);
 }
 
 /* popular destinations */
@@ -403,6 +408,12 @@ min-height: 300px;
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .tag {
+    @apply bg-purple-600 text-center text-white py-1 px-3 rounded-full cursor-pointer transition-all duration-300 ease-in-out;
+  }
+  .tag:hover {
+    @apply bg-purple-100 scale-110 rotate-3 text-black;
   }
 }
 

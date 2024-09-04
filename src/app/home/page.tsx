@@ -153,9 +153,40 @@ const page = () => {
     <Image src={trail} alt='leopard'></Image>
       <figcaption className="figure-caption">
         <h2 className="text-md font-bold">Azure Paradise</h2>
-        <p className='text-sm'>Tropical Haven 19/30/2024</p>
+        <p className='text-sm'>Tropical Haven 19/01/2024</p>
       </figcaption>
     </figure>
+  </div>
+  </div>
+
+  <div className='p-4 bg-gray-300'>
+  <div className='my-6'>
+  <span className='font-bold lg:px-6 text-2xl'>Categories</span>
+  </div>
+
+  <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
+    
+  <span className="tag">Adventure</span>
+  <span className="tag">Beach</span>
+  <span className="tag">Culture</span>
+  <span className="tag">Luxury</span>
+  <span className="tag">Experience</span>
+  <span className="tag">Tours</span>
+  <span className="tag">Activities</span>
+  <span className="tag">Escapes</span>
+  <span className="tag">Journeyes</span>
+  <span className="tag">Countries</span>
+  <span className="tag">City</span>
+  <span className="tag">Forest</span>
+  <span className="tag">Mountain</span>
+  <span className="tag">Ski</span>
+  <span className="tag">Chill</span>
+  <span className="tag">Festivals</span>
+  <span className="tag">Parks</span>
+  <span className="tag">Desert</span>
+  <span className="tag">Waterfall</span>
+  <span className="tag">Island</span>
+   
   </div>
   </div>
 </div>
