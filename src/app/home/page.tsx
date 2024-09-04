@@ -115,7 +115,7 @@ const page = () => {
   </div>
   </div>
 
-  <div className='p-4'>
+  <div className='p-4 mb-6'>
   <div className='my-6'>
   <span className='font-bold lg:px-6 text-2xl'>Popular Destinations</span>
   </div>
@@ -123,7 +123,7 @@ const page = () => {
   <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
     
     <figure className="figure-container">
-      <Image src={leopard} alt='leopard'></Image>
+      <Image  src={leopard} alt='leopard'></Image>
       <figcaption className="figure-caption">
         <h2 className="text-md font-bold">Natures's Call</h2>
         <p className='text-sm'>Wildness Lodge 19/09/2024</p>
@@ -164,7 +164,7 @@ const page = () => {
   <span className='font-bold lg:px-6 text-2xl'>Categories</span>
   </div>
 
-  <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
+  <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-9">
     
   <span className="tag">Adventure</span>
   <span className="tag">Beach</span>

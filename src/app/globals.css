@@ -380,6 +380,8 @@ transform: scale(1.02);
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  cursor:pointer;
+
 }
 .figure-container img {
   width: 100%;
@@ -387,6 +389,14 @@ transform: scale(1.02);
   display: block;
   object-fit: cover;
   
+}
+.figure-container:hover img{
+  -webkit-filter: blur(2px);
+	filter: blur(2px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  /* -webkit-filter: grayscale(100%);
+	filter: grayscale(100%); */
 }
 .figure-caption {
   position: absolute;
@@ -402,7 +412,9 @@ transform: scale(1.02);
   display: flex;
   flex-direction: column;
   justify-content: end;
+  
 }
+
 
 
 @layer utilities {
@@ -415,5 +427,8 @@ transform: scale(1.02);
   .tag:hover {
     @apply bg-purple-100 scale-110 rotate-3 text-black;
   }
+  
+ 
+  
 }
 
