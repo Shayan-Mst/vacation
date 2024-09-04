@@ -494,6 +494,17 @@ transform: scale(1.02);
   color: #dd4b39;
 }
 
+/* destinations */
+
+.destination-img{
+
+  width: 100%;
+  height: 470px;
+  object-fit:cover;
+  
+  border-radius: 2px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
