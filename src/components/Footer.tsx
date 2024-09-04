@@ -2,16 +2,14 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="relative text-white py-8">
-       <div className="z-0 absolute inset-0 bg-cover bg-center bg-no-repeat footer-img">
+    <footer className="relative text-white py-8 text-wrap">
+       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat footer-img">
     <div className="absolute inset-0 bg-black opacity-60"></div></div>
-  <div className="container mx-auto px-4 z-10 relative">
+  <div className="mx-auto px-4 relative">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       
-     
       
-     
-      <div>
+      <div className='text-center sm:text-justify justify-center grid'>
         <h3 className="text-lg font-bold mb-4">Quick Links</h3>
         <ul>
           <li className="mb-2"><a href="#" className="">Home</a></li>
@@ -21,52 +19,75 @@ const Footer = () => {
         </ul>
       </div>
 
+    
      
-      <div>
+    
+      <div className='text-center sm:text-justify justify-center grid'>
+      <h3 className="text-lg font-bold mb-4">About Us</h3>
+        <ul>
+          <li className="mb-2"><a href="#" className="">Our Story</a></li>
+          <li className="mb-2"><a href="#" className="">Community</a></li>
+          <li className="mb-2"><a href="#" className="">Leadership Team</a></li>
+          <li className="mb-2"><a href="#" className="">New Releases</a></li>
+        </ul>
+      </div>
+
+      <div className='text-center sm:text-justify justify-center grid'>
         <h3 className="text-lg font-bold mb-4">Contact Us</h3>
-        <p className="text-sm mb-2">Email: info@travelworld.com</p>
-        <p className="text-sm mb-2">Phone: +123 456 7890</p>
-        <p className="text-sm">Address: 123 Travel Street, Wanderlust City, World</p>
+        <p className=" mb-2">Email: info@travelworld.com</p>
+        <p className=" mb-2">Phone: +123 456 7890</p>
+        <p className=" mb-2">Phone: +123 456 7891</p>
+        <p className="">Address: 123 Travel Street, Wanderlust City, World</p>
       </div>
 
-
-      <div>
-        <h3 className="text-lg font-bold mb-4">About Us</h3>
-        <p className="text-sm">
-        At WanderLust Journeys, we believe that travel is more than just visiting new places—it's about creating unforgettable memories, experiencing diverse cultures, and connecting with the world around us.
-
-         </p>
-      </div>
 
     </div>
 
    
     <div className="mt-8 text-center">
       <h3 className="text-lg font-bold mb-4">Follow Us</h3>
-      <div className="flex justify-center space-x-4">
-        <a href="#" className="text-purple-300 hover:text-purple-100">
-          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            
-            <path d="M22.675 0h-21.35C0.599 0 0 0.599 0 1.326v21.348C0 23.401 0.599 24 1.326 24H12.81v-9.294H9.692V11.07h3.118V8.461c0-3.1 1.894-4.791 4.658-4.791 1.325 0 2.464.099 2.796.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.311h3.587l-.467 3.636h-3.12V24h6.116c.727 0 1.326-.599 1.326-1.326V1.326C24 .599 23.401 0 22.675 0z"/>
-          </svg>
-        </a>
-        <a href="#" className="text-purple-300 hover:text-purple-100">
-          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-         
-            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.058 2.202.271 3.034.574.833.303 1.545.711 2.251 1.418s1.115 1.419 1.418 2.251c.303.832.516 1.828.574 3.034.058 1.266.07 1.646.07 4.851s-.012 3.584-.07 4.85c-.058 1.206-.271 2.202-.574 3.034-.303.833-.711 1.545-1.418 2.251-.706.707-1.418 1.115-2.251 1.418-.832.303-1.828.516-3.034.574-1.266.058-1.646.07-4.851.07s-3.584-.012-4.85-.07c-1.206-.058-2.202-.271-3.034-.574-.833-.303-1.545-.711-2.251-1.418-.707-.706-1.115-1.418-1.418-2.251-.303-.832-.516-1.828-.574-3.034C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.058-1.206.271-2.202.574-3.034.303-.833.711-1.545 1.418-2.251C5.032 2.874 5.744 2.466 6.577 2.163c.832-.303 1.828-.516 3.034-.574C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.756 0 8.322.015 7.052.073 5.77.131 4.713.355 3.765.769 2.839 1.169 2.021 1.795 1.207 2.61c-.813.814-1.439 1.632-1.839 2.558-.414.948-.638 2.005-.696 3.287C0 8.322 0 8.756 0 12s.015 3.678.073 4.948c.058 1.282.282 2.339.696 3.287.4.926 1.026 1.744 1.839 2.558.814.813 1.632 1.439 2.558 1.839.948.414 2.005.638 3.287.696 1.27.058 1.704.073 4.948.073s3.678-.015 4.948-.073c1.282-.058 2.339-.282 3.287-.696.926-.4 1.744-1.026 2.558-1.839.813-.814 1.439-1.632 1.839-2.558.414-.948.638-2.005.696-3.287.058-1.27.073-1.704.073-4.948s-.015-3.678-.073-4.948c-.058-1.282-.282-2.339-.696-3.287-.4-.926-1.026-1.744-1.839-2.558-.814-.813-1.632-1.439-2.558-1.839-.948-.414-2.005-.638-3.287-.696-1.27-.058-1.704-.073-4.948-.073zM12 5.838c-3.4 0-6.162 2.761-6.162 6.162s2.761 6.162 6.162 6.162 6.162-2.761 6.162-6.162-2.761-6.162-6.162-6.162zm0 10.162c-2.207 0-4-1.793-4-4s1.793-4 4-4 4 1.793 4 4-1.793 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.441s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.441-1.441-1.441z"/>
-          </svg>
-        </a>
-        <a href="#" className="text-purple-300 hover:text-purple-100">
-          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-           
-            <path d="M24 4.557c-.883.392-1.83.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.723-.95.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.72 0-4.924 2.204-4.924 4.924 0 .386.044.762.127 1.124-4.094-.205-7.725-2.165-10.156-5.144-.424.728-.666 1.571-.666 2.475 0 1.708.87 3.215 2.19 4.1-.807-.026-1.566-.248-2.228-.617v.062c0 2.385 1.697 4.374 3.946 4.828-.414.112-.849.171-1.296.171-.317 0-.626-.031-.928-.088.626 1.956 2.444 3.379 4.599 3.419-1.683 1.32-3.808 2.107-6.115 2.107-.398 0-.79-.023-1.175-.069 2.179 1.396 4.768 2.211 7.557 2.211 9.057 0 14.01-7.502 14.01-14.01 0-.213-.005-.425-.014-.637.961-.694 1.797-1.56 2.457-2.549z"/>
-          </svg>
-        </a>
-      </div>
+     
+<section className='socials'>
+
+<ul>
+  <li>
+    <a className="facebook">
+     
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg>
+    </a>
+  </li>
+  <li>
+    <a className="twitter">
+     
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg>
+    </a>
+  </li>
+  <li>
+    <a className="instagram" >
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+    </a>
+  </li>
+  <li>
+    <a className="google">
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-google" viewBox="0 0 16 16">
+  <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+</svg>
+    </a>
+  </li>
+</ul>
+</section>
     </div>
     
     
-    <div className="mt-8 text-center text-sm text-purple-300">
+    <div className="mt-8 text-center text-sm">
       &copy; 2024 TravelWorld. All rights reserved.
     </div>
   </div>

@@ -20,6 +20,7 @@ html , body ,.root{
  
    background-color: rgb(245, 243, 243);
   height: 100%;
+  
    
 } 
 
@@ -423,7 +424,75 @@ transform: scale(1.02);
   
 }
 
+/* socials */
 
+.socials{
+  display: grid;
+  place-content: center;
+  
+}
+.socials ul {
+  
+  
+  background-color: white;
+  padding-block:8px;
+  display:flex;
+  border-radius: 16px;
+ 
+}
+.socials  ul li {
+  list-style:none;
+}
+.socials  ul li a {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  width: 40px;
+  height:40px;
+  line-height:100px;
+  font-size:40px;
+  text-align:center;
+  text-decoration:none;
+  color:#404040;
+  margin: 0 25px;
+  transition:.5s;
+}
+
+.socials .facebook:hover {
+  color: #3b5998;
+}
+.socials .facebook:hover svg { 
+  stroke: #3b5998;
+
+}
+.socials .twitter:hover {
+  color: #1da1f2;
+}
+.socials .twitter:hover svg { 
+  stroke: #1da1f2;
+}
+.socials .instagram:hover {
+  color: #c32aa3;
+}
+.socials .instagram:hover svg { 
+  stroke: #c32aa3;
+}
+.socials .google:hover {
+  color: #dd4b39;
+}
+.socials .google:hover svg { 
+  stroke: #dd4b39;
+}
+.socials ul li a .twitter {
+  color: #1da1f2;
+}
+.socials ul li a:hover:nth-child(3) {
+  color: #c32aa3;
+}
+.socials ul li a:hover:nth-child(4) {
+  color: #dd4b39;
+}
 
 @layer utilities {
   .text-balance {
