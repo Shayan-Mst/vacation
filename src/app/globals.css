@@ -106,6 +106,7 @@ min-height: 300px;
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+  
 }
 
 .img-rnd{
@@ -412,6 +413,13 @@ transform: scale(1.02);
   display: flex;
   flex-direction: column;
   justify-content: end;
+  
+}
+
+
+.footer-img{
+
+  background-image: url('/bg-login.jpg');
   
 }
 

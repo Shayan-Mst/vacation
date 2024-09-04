@@ -14,6 +14,7 @@ import boat from './../../../public/boat.jpg'
 import bg from './../../../public/bg-login.jpg'
 import { useRouter } from "next/navigation"
 import Topbar from '@/components/Topbar'
+import Footer from '@/components/Footer'
 
 const page = () => {
 
@@ -153,9 +154,9 @@ const page = () => {
   </div>
   </div>
 
-  <div className='p-4 bg-gray-300'>
+  <div className='p-4 bg-gray-300 pb-16'>
   <div className='my-6'>
-  <span className='font-bold lg:px-6 text-2xl'>Categories</span>
+  <span className='font-bold lg:px-6  text-2xl'>Categories</span>
   </div>
 
   <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-9">
@@ -193,6 +194,8 @@ const page = () => {
 </div>
 
 </div>
+
+<Footer/>
 <Navigation/>
     </div>
   )
