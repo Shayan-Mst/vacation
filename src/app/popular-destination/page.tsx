@@ -4,7 +4,12 @@ import Navigation from '@/components/navigation'
 import Image from 'next/image'
 import React from 'react'
 import rock from './../../../public/rock.jpg'
-import iran from './../../../public/iranbigger.svg'
+import chris from './../../../public/chris.jpg'
+import john from './../../../public/john.jpg'
+import jane from './../../../public/jane.jpg'
+import michael from './../../../public/michael.jpg'
+import emily from './../../../public/emily.jpg'
+import sophi from './../../../public/sophi.jpg'
 
 
 const page = () => {
@@ -66,6 +71,76 @@ adventure, or relaxation, Iran offers a unique and unforgettable experience.
     </div>
 </div>
 
+<div className='p-4 lg:p-8  text-center'>
+<article className='text-2xl font-semibold m-8'>Meet Our Experts</article>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div className="bg-white p-6 rounded-lg shadow-lg card">
+        <div className='card-content'>
+        <Image className="w-24 h-24 rounded-full  mx-auto object-cover" src={john} alt="Profile Picture"></Image>
+        <div className="text-center mt-4">
+          <h2 className="text-xl font-semibold">John Doe</h2>
+          <p className="text-gray-600">New York, USA</p>
+        </div>
+        </div>
+      </div>
+
+      
+      <div className="bg-white p-6 rounded-lg shadow-lg card">
+        <div className='card-content'>
+        <Image className="w-24 h-24 rounded-full mx-auto object-cover" src={jane} alt="Profile Picture"></Image>
+        <div className="text-center mt-4">
+          <h2 className="text-xl font-semibold">Jane Smith</h2>
+          <p className="text-gray-600">Los Angeles, USA</p>
+        </div>
+        </div>
+      </div>
+
+      
+      <div className="bg-white p-6 rounded-lg shadow-lg card">
+      <div className='card-content'>
+        <Image className="w-24 h-24 rounded-full mx-auto object-cover" src={michael} alt="Profile Picture"></Image>
+        <div className="text-center mt-4">
+          <h2 className="text-xl font-semibold">Michael Johnson</h2>
+          <p className="text-gray-600">London, UK</p>
+        </div>
+        </div>
+      </div>
+
+   
+      <div className="bg-white p-6 rounded-lg shadow-lg card">
+      <div className='card-content'>
+        <Image className="w-24 h-24 rounded-full mx-auto object-cover" src={emily} alt="Profile Picture"></Image>
+        <div className="text-center mt-4">
+          <h2 className="text-xl font-semibold">Emily Davis</h2>
+          <p className="text-gray-600">Paris, France</p>
+        </div>
+        </div>
+      </div>
+
+      
+      <div className="bg-white p-6 rounded-lg shadow-lg card">
+      <div className='card-content'>
+        <Image className="w-24 h-24 rounded-full mx-auto object-cover" src={chris} alt="Profile Picture"></Image>
+        <div className="text-center mt-4">
+          <h2 className="text-xl font-semibold">Chris Brown</h2>
+          <p className="text-gray-600">Sydney, Australia</p>
+        </div>
+        </div>
+      </div>
+
+      
+      <div className="bg-white p-6 rounded-lg shadow-lg card">
+      <div className='card-content'>
+        <Image className="w-24 h-24 rounded-full mx-auto object-cover" src={sophi} alt="Profile Picture"></Image>
+        <div className="text-center mt-4">
+          <h2 className="text-xl font-semibold">Sophia Wilson</h2>
+          <p className="text-gray-600">Tokyo, Japan</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
 <Footer/>
 <Navigation/>
     </div>

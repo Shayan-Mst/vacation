@@ -7,7 +7,7 @@ const navigation = () => {
 
    
   return (
-    <nav className="sticky bottom-0  bg-purple-700  md:hidden">
+    <nav className="sticky bottom-0 z-10  bg-purple-700  md:hidden">
     <ul className="grid grid-cols-4">
       <li onClick={()=>setSelected(1)} className={`flex flex-col items-center p-4 cursor-pointer transition-all duration-300 ease-in-out 
       ${selected==1?"selected":null}`}>
