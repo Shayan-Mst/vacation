@@ -43,6 +43,7 @@ adventure, or relaxation, Iran offers a unique and unforgettable experience.
 
         <div className='p-16'>
             <h2 className='sm:text-4xl text-3xl font-bold my-2'>Iran at a Glance</h2>
+            <div className='w-14 h-1 bg-purple-500 mb-4'></div>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
 <div className='flex-column'>
 

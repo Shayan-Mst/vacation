@@ -536,7 +536,7 @@ transform: scale(1.02);
 .card {
   position: relative;
   overflow: hidden;
-  transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .card::before {
@@ -562,6 +562,7 @@ transform: scale(1.02);
 }
 .card:hover{
   color: white;
+  transform: scale(1.05);
 }
 .card p {
   transition: color 0.3s ease-in-out;
