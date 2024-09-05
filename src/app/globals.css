@@ -571,6 +571,153 @@ transform: scale(1.02);
   color: white;
 }
 
+/* address where */
+
+.breadcrumb {
+  font-size: 1rem;
+  margin: 8px;
+}
+
+.breadcrumb ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb ul li {
+  margin: 8px;
+}
+
+.breadcrumb ul li a {
+  color: #444F6B;
+  text-decoration: none;
+
+}
+
+.breadcrumb ul li:nth-child(4) a {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  
+}
+
+.breadcrumb ul li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb ul li span {
+  margin-inline: 8px;
+  color: #6c757d; /* Gray color for the separator */
+}
+
+/* tour package */
+
+.package {
+
+  border-radius: 8px; 
+  padding: 20px;
+  max-width:100%;
+  max-height: 100%;
+  color: #444F6B;
+}
+
+h2 {
+  font-size: 1rem;
+ 
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.small-text {
+  font-size: 1rem;
+ 
+}
+
+.duration {
+  font-size: 0.8rem;
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  
+  margin: 20px 0;
+}
+
+
+.contact-btn {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(255,0,0);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(255,0,0);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  z-index: 1;
+  
+}
+
+.contact-btn span {
+  margin: 10px;
+}
+
+.contact-btn::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.contact-btn:hover {
+  color: #fff;
+  border: 1px solid rgb(255,0,0);
+}
+
+.contact-btn:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+}
+
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.details-list {
+  list-style-type:disc;
+  padding-inline: 16px;
+}
+
+.details-list li {
+  margin: 5px 0;
+  font-size: 1rem;
+  
+}
 
 @layer utilities {
   .text-balance {

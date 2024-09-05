@@ -15,6 +15,7 @@ import bg from './../../../public/bg-login.jpg'
 import { useRouter } from "next/navigation"
 import Topbar from '@/components/Topbar'
 import Footer from '@/components/Footer'
+import Link from 'next/link'
 
 const page = () => {
 
@@ -67,7 +68,7 @@ const page = () => {
       <h2 className="text-xl font-bold mb-4">Majestic Peaks (SW)</h2>
       <p className="text-gray-600 font-semibold text-sm">Summit Sanctuary 17/08/2024</p>
       </div>
-      <button className='bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-lg'>Book</button>
+      <Link href='/tour'><button className='bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-lg'>Book</button></Link>
     </div>
     
     </div>
@@ -79,7 +80,7 @@ const page = () => {
       <h2 className="text-xl font-bold mb-4">Coastal Bliss (ITA)</h2>
       <p className="text-gray-600 font-semibold text-sm">Sunset Resort  11/08/2024</p>
       </div>
-      <button className='bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-lg'>Book</button>
+      <Link href='/tour'><button className='bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-lg'>Book</button></Link>
     </div>
     </div>
   </div>
