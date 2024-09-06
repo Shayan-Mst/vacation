@@ -719,10 +719,70 @@ h3 {
   
 }
 
+/* swap collection */
+
+
+
+/* CSS Code */
+.swiper-wrapper {
+  width: 100%;
+  height: max-content;
+  padding-bottom: 64px;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+  }
+
+  .hey{
+
+    filter:contrast(1.2);
+    transition: filter 0.2s ease-out;
+    
+  }
+  .hey:hover{filter: contrast(1);}
+  
+  .swiper-pagination-bullet {
+  background: #6a1b9a;
+  }
+
+  .card-body{
+    background: linear-gradient(from top right to bottom left, purple 50%, transparent 50%);
+  }
+
+  .swiper-button-next{
+    color: white;
+  }
+  .swiper-button-next{
+    box-shadow:  2px 2px 1px 2px rgba(0, 0, 0, 0.2) !important;
+  
+  }
+.swiper-button-prev{
+  box-shadow:  2px 2px 1px 2px rgba(0, 0, 0, 0.2) !important;
+}
+.swiper-button-prev::after{
+  display: none;
+}
+.swiper-button-next::after{
+  display: none;
+}
+
+.swiper-button-prev svg{
+
+  width: 35px !important;
+  height: 35px !important;
+}
+.swiper-button-next svg{
+  width: 35px !important;
+  height: 35px !important;
+}
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  
   .tag {
     @apply bg-purple-600 text-center text-white py-1 px-3 rounded-full cursor-pointer transition-all duration-300 ease-in-out;
   }
