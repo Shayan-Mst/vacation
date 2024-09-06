@@ -1,14 +1,25 @@
+
+import {  useShow } from '@/context/context'
 import React from 'react'
 
 const Topbar = () => {
+
+const {setShow} = useShow();
+
+
+
+const toggleShow = () => {
+  setShow((prevShow: any) => !prevShow); // Correctly toggles the state based on previous value
+};
+
   return (
     <div className='relative top-bar'>
     {/* <Image src={desert} alt='desert' className='w-full h-full object-cover absolute z-0'></Image> */}
     
 
 <div className=' z-10 relative flex justify-between'>
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="black" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-     className="feather feather-menu">
+    <svg  onClick={toggleShow} xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="black" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+     className="feather feather-menu cursor-pointer">
   <line x1="3" y1="12" x2="21" y2="12"></line>
   <line x1="3" y1="6" x2="21" y2="6"></line>
   <line x1="3" y1="18" x2="21" y2="18"></line>

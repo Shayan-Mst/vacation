@@ -16,6 +16,7 @@ import { useRouter } from "next/navigation"
 import Topbar from '@/components/Topbar'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import Sidebar from '@/components/Sidebar'
 
 const page = () => {
 
@@ -27,7 +28,8 @@ const page = () => {
 
    }
 
-  return (
+  return (<>
+  <Sidebar/>
     <div className='bg-gray-200'>
 
 <Topbar/>
@@ -199,6 +201,7 @@ const page = () => {
 <Footer/>
 <Navigation/>
     </div>
+    </>
   )
 }
 

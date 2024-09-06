@@ -1,3 +1,4 @@
+"use client"
 import Footer from '@/components/Footer'
 import Topbar from '@/components/Topbar'
 import Navigation from '@/components/navigation'
@@ -18,7 +19,7 @@ const page = () => {
 
 <Topbar/>
 
-<div className=' lg:px-16 lg:mx-8 p-8 grid grid-cols-1 gap-8 lg:grid-cols-2' >
+<div className=' xl:px-16 xl:mx-8 lg:mx-8 p-8 grid grid-cols-1 gap-8 lg:grid-cols-2' >
 <div>
      <Image className='destination-img' src={rock} alt="rock"></Image> 
 

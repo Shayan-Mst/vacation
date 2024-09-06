@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ShowProvider } from "@/context/context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +15,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
+  return (<ShowProvider 
+  >
     <html lang="en">
       <head><meta name="theme-color" content="#6a1b9a"/>
       
@@ -22,5 +24,6 @@ export default function RootLayout({
       <body className={inter.className}>{children}
      </body>
     </html>
+    </ShowProvider>
   );
 }
