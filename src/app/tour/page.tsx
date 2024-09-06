@@ -42,7 +42,7 @@ const page = () => {
             slidesPerView: 6,
             spaceBetween: 30,
           },
-          1200: {
+          1300: {
             slidesPerView: 4,
             spaceBetween: 20,
           },
@@ -51,7 +51,7 @@ const page = () => {
             spaceBetween: 20,
           },
 
-          768:{
+          640:{
             slidesPerView: 2,
             spaceBetween: 10,
           },
