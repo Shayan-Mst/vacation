@@ -832,6 +832,7 @@ h3 {
   width: 100%;
   display: flex;
   margin-bottom: 20px;
+
   position: relative;
   flex-direction: column;
 
@@ -877,13 +878,13 @@ h3 {
   color: #7079d3;
 }
 
-.sidebar-item:hover i{
+.sidebar-item:hover svg{
   
-  color: #7079d3;
+  fill: #ffffff;
 }
 
 .sidebar-item:not(:last-child):hover a{
-  color: #fff;
+  color: #ffffff;
 }
 .sidebar-item a{
 
@@ -899,14 +900,13 @@ h3 {
   position: relative;
 }
 
-.sidebar-item i{
+.sidebar-item svg{
 
-  width: 22px;
-  height: auto;
+ 
   transition: fill 0.5s;
   margin-right: 12px;
   margin-bottom: 2px;
-  transition:color 0.3s ease ;
+  
 }
 
 .sidebar-item .item-active{
