@@ -781,16 +781,16 @@ h3 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #16151a;
+  background-color: #E5E7EB;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   z-index: 30;
-  width: 280px;
+  width: 200px;
   transform: translateX(-100%);
   transition: transform 0.5s ease;
-  border-right: 1px solid #222227;
+ 
   
 }
 .sidebar--active {
@@ -799,12 +799,11 @@ h3 {
 
 .sidebar-logo {
   display:flex;
-
-  
   align-items: center;
+  justify-content:space-between;
   height: 70px;
   width: 100%;
-  padding-left: 45px ;
+  padding: 0 19px  ;
   margin-top: 10px;
 }
 
@@ -838,9 +837,12 @@ h3 {
 
 }
 .sidebar-item:last-child{
+  margin: 0;
+  vertical-align: middle;
+}
+.sidebar-item:last-child{
   background-color: #5652521f;
-
- overflow: hidden;
+  overflow: hidden;
   max-height: 0;
   transition:  0.3s ease-in-out;
 
@@ -869,22 +871,26 @@ h3 {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #7079d3;
+  background-color: #882ac2;
 
 
 }
 
 .sidebar-item:last-child a:hover{
-  color: #7079d3;
+  color: #882ac2;
 }
 
 .sidebar-item:hover svg{
   
-  fill: #ffffff;
+  fill: #882ac2;
 }
 
+.sidebar-item:hover #toggleIcon{
+  stroke: #882ac2;
+  fill: none;
+}
 .sidebar-item:not(:last-child):hover a{
-  color: #ffffff;
+  color: #882ac2;
 }
 .sidebar-item a{
 
@@ -893,11 +899,12 @@ h3 {
   justify-content: flex-start;
   align-items: center;
   font-size: 16px;
-  color: #c0c0c0;
+  color: #000000;
   font-family: 'Inter', sans-serif;
   margin-left: 15px;
   transition: 0.4s ease;
   position: relative;
+  font-weight: bold;
 }
 
 .sidebar-item svg{
@@ -911,7 +918,7 @@ h3 {
 
 .sidebar-item .item-active{
 
-  color: #7079d3;
+  color: #882ac2;
 }
 
 .sidebar-link{
@@ -921,11 +928,28 @@ h3 {
   justify-content: flex-start;
   align-items: center;
   font-size: 16px;
-  color: #c0c0c0;
+  color: #000000;
   font-family: 'Inter', sans-serif;
   margin-left: 15px;
   transition: 0.4s ease;
   position: relative;
+}
+
+.signature{
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1rem;
+  font-weight: bold;
+ width: 100%;
+ padding: 13px 20px; 
+ background-color: rgba(255, 255, 255,0.3);
+}
+
+.signature span{
+
+  font-size: 0.8rem;
 }
 
 @layer utilities {
