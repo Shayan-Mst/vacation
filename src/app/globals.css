@@ -952,6 +952,9 @@ h3 {
   font-size: 0.8rem;
 }
 
+/* travel */
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
