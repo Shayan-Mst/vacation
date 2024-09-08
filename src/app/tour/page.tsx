@@ -2,6 +2,7 @@
 import Topbar from '@/components/Topbar'
 import Naavigation from '@/components/navigation'
 import Footer from '@/components/Footer'
+import Sidebar from '@/components/Sidebar'
 import React, { useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -66,6 +67,8 @@ const page = () => {
 
   
   return (
+    <>
+   <Sidebar/>
     <div className='h-full relative'>
 
 <Topbar/>
@@ -330,6 +333,7 @@ const page = () => {
 <Footer/>
 <Naavigation/>
     </div>
+    </>
   )
 }
 
