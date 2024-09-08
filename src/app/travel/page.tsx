@@ -3,7 +3,12 @@ import Footer from '@/components/Footer'
 import Sidebar from '@/components/Sidebar'
 import Topbar from '@/components/Topbar'
 import Navigation from '@/components/navigation'
+import Image from 'next/image'
 import React from 'react'
+import Hawaii from "./../../../public/Hawaii.jpg"
+import desert from "./../../../public/rock.jpg"
+import eximg from "./../../../public/trail.jpg"
+import Link from 'next/link'
 
 const page = () => {
   return (
@@ -14,7 +19,7 @@ const page = () => {
 <Topbar/>
 
 <section className='xl:p-12 lg:p-4 md:p-8 sm:p-4 p-1'>
-<div className='bg-purple-950 sm:p-8 p-2 rounded-xl grid grid-cols-1 lg:grid-cols-2'>
+<div className='bg-purple-950 sm:p-8 p-2 my-8 rounded-xl grid grid-cols-1 lg:grid-cols-2'>
     <div className='text-white my-8'>
 <h2 className='sm:text-4xl text-3xl font-bold  my-5'>Travel Member Benefits</h2>
 
@@ -52,7 +57,7 @@ Best Price Guarantee on Tour & Cruise Packages﻿*
     <p className='text-center text-xl font-semibold mb-8'>What Can We Help You With?</p>
 <div className='grid grid-cols-3 sm:gap-8 lg:gap-4 gap-4'>
 
-<div className='bg-white rounded-md p-4 py-8 hover:opacity-80 cursor-pointer'>
+<div className='bg-white rounded-md p-4 py-8 hover:opacity-70 cursor-pointer'>
 
     <div>
 <svg className='mx-auto' width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.331 9.509h-2.012l-1.307-4.972a4.778 4.778 0 0 0-4.642-3.531H7.579a4.741 4.741 0 0 0-4.74 4l-1.8 11.672a3.059 3.059 0 0 0 .706 2.462A3.148 3.148 0 0 0 3.8 20.207a3.25 3.25 0 0 0 6.428.039H13.9a3.251 3.251 0 0 0 6.424 0 2.644 2.644 0 0 0 2.663-2.62v-5.5a2.644 2.644 0 0 0-2.656-2.617zm-9.843-7.473h1.882A3.747 3.747 0 0 1 16.015 4.8l1.238 4.71h-6.282a1.723 1.723 0 0 1-1.682-2.1zm-3.47 19.928a2.234 2.234 0 1 1 2.233-2.234 2.236 2.236 0 0 1-2.233 2.234zm10.1 0a2.234 2.234 0 1 1 2.233-2.234 2.236 2.236 0 0 1-2.237 2.234zm4.849-4.338a1.613 1.613 0 0 1-1.626 1.589 3.264 3.264 0 0 0-6.447 0h-3.653a3.324 3.324 0 0 0-3.223-2.749A3.324 3.324 0 0 0 3.8 19.185a2.12 2.12 0 0 1-1.269-.712 2.031 2.031 0 0 1-.471-1.634l1.8-11.672a3.715 3.715 0 0 1 3.719-3.131h1.853l-1.149 5.15a2.755 2.755 0 0 0 2.688 3.354h9.36a1.612 1.612 0 0 1 1.632 1.589z"/></svg>
@@ -61,7 +66,7 @@ Best Price Guarantee on Tour & Cruise Packages﻿*
 
 </div>
 
-<div className='bg-white rounded-md p-4 py-8 hover:opacity-80 cursor-pointer'>
+<div className='bg-white rounded-md p-4 py-8 hover:opacity-70 cursor-pointer'>
 
 <div>
 <svg className='mx-auto' width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M50 38H37.94l1-2.65A1 1 0 0 0 38 34H27a1 1 0 0 0-1 .8l-.65 3.2h-1.46C16 38 6.8 34.3 6.05 26H19a1 1 0 0 0 0-2h-3.57l-2.83-9.18A4 4 0 0 0 8.78 12H5a1 1 0 0 0-1 1c0 12.45-.49 14.65 1.75 18.57C9.26 37.67 17.62 40 24.94 40l-.39 1.87a1 1 0 0 0 2 .4c1.45-7-.14.69 1.3-6.27h8.75l-8 21.34c-.34.88-.81.66-5.33.66l1.63-7.81a1 1 0 0 0-2-.4L21 58.8a1 1 0 0 0 1 1.2h5.61a3 3 0 0 0 2.82-2l1.89-5h2.18a3.49 3.49 0 0 0 .43-7l2.26-6H50a1 1 0 0 0 0-2zM6 14h2.78a2 2 0 0 1 1.91 1.41L13.34 24H6zm28.5 34a1.5 1.5 0 0 1 1.06 2.56c-.49.5-.86.44-2.49.44 1.29-3.45 1.01-3 1.43-3z"/><path d="M59 32.4a21.45 21.45 0 0 0-5.91-5.25c-5.9-3.6-10.82-3.15-15.9-3.15l-2.26-6a3.49 3.49 0 0 0-.43-7h-2.17l-.26-.69a1 1 0 0 0-1.88.7l4.87 13H27L23.23 6c5.27 0 4.93-.4 5.59 1.37a1 1 0 0 0 1.88-.7l-.28-.73A3 3 0 0 0 27.61 4c-6.07 0-6-.13-6.39.37s-.54-.78 3.72 19.63H23a1 1 0 0 0 0 2c20 0 21.77-.47 26.58 1.58A3.5 3.5 0 0 0 51.5 34h6.18a2.72 2.72 0 0 1-2.4 4H54a1 1 0 0 0 0 2h1.28A4.73 4.73 0 0 0 59 32.4zM34.5 13c1.85 0 2.26 3-.3 3l-1.13-3zm17 16c1 0 .71-.05 1.11.21A19.81 19.81 0 0 1 56 32h-4.5a1.5 1.5 0 0 1 0-3zM24.41 47.08A1.07 1.07 0 0 0 25 45a1.07 1.07 0 0 0-.59 2.08z"/><path d="M44 31v-2a1 1 0 0 0-2 0v2a1 1 0 0 0 2 0zM39 31v-2a1 1 0 0 0-2 0v2a1 1 0 0 0 2 0zM34 31v-2a1 1 0 0 0-2 0v2a1 1 0 0 0 2 0zM29 31v-2a1 1 0 0 0-2 0v2a1 1 0 0 0 2 0zM24 31v-2a1 1 0 0 0-2 0v2a1 1 0 0 0 2 0zM17 29v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0z"/></svg>   
@@ -70,7 +75,7 @@ Best Price Guarantee on Tour & Cruise Packages﻿*
 
 </div>
 
-<div className='bg-white rounded-md p-4 py-8 hover:opacity-80 cursor-pointer'>
+<div className='bg-white rounded-md p-4 py-8 hover:opacity-70 cursor-pointer'>
     <div>
     <svg className='mx-auto' width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M12 4h13.9a.09.09 0 0 1 .1.1V22a1 1 0 0 0 2 0V4.1A2.1 2.1 0 0 0 25.9 2H12a1 1 0 0 0 0 2zM29 28h-1v-2a1 1 0 0 0-2 0v2h-4v-5a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v5H6V4.1a.09.09 0 0 1 .1-.1H8a1 1 0 0 0 0-2H6.1A2.1 2.1 0 0 0 4 4.1V28H3a1 1 0 0 0 0 2h26a1 1 0 0 0 0-2zm-17-4h3v4h-3zm5 4v-4h3v4z"/><path d="M8 7a1 1 0 0 0 1 1h2a1 1 0 0 0 0-2H9a1 1 0 0 0-1 1zM17 6h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM23 6h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM11 10H9a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM17 10h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM23 10h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM11 14H9a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM17 14h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM23 14h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM11 18H9a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM17 18h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM23 18h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2z"/></svg>
 
@@ -79,7 +84,7 @@ Best Price Guarantee on Tour & Cruise Packages﻿*
     </div>
 </div>
 
-<div className='bg-white rounded-md p-4 py-8 hover:opacity-80 cursor-pointer'>
+<div className='bg-white rounded-md p-4 py-8 hover:opacity-70 cursor-pointer'>
 
 <div>
 <svg className='mx-auto' width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M6 30v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-2 0zM3.45 17.83 6 19.54V26a1 1 0 0 0 2 0c0-7.59.16-7.43-.45-7.83L5 16.46V14h10a1 1 0 0 0 0-2H4a1 1 0 0 0-1 1c0 4.3-.14 4.44.45 4.83zM27 21v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-2 0zM33 21v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-2 0zM21 21v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-2 0zM22 33v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-2 0zM28 33v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-2 0zM56 41a1 1 0 0 0-2 0 1 1 0 0 0 2 0zM51 41a1 1 0 0 0-2 0 1 1 0 0 0 2 0zM46 41a1 1 0 0 0-2 0 1 1 0 0 0 2 0z"/><path d="M13 16h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM13 20h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM13 24h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2z"/><path d="M62.8 36.4c-.41-.53-.54-.4-4.8-.4v-7a1 1 0 0 0-1-1H40V17a1 1 0 0 0-1-1H21v-3a1 1 0 0 0-1-1h-1a1 1 0 0 0 0 2v2.46c-2.7 1.8-3 1.84-3 2.54v21H8v-5a1 1 0 0 0-2 0v5H2a1 1 0 0 0-1 1c0 2.73-.39 5.43 2.56 6.9A2.63 2.63 0 0 1 5 50.24V55a1 1 0 0 0 1 1h10a1 1 0 0 0 0-2H7v-3.76a4.6 4.6 0 0 0-2.56-4.14C2.77 45.27 3 43.67 3 42h33c.47 0 .1.2 5.35-4H47a1 1 0 0 0 0-2v-3a1 1 0 0 0-2 0v3h-4v-3a1 1 0 0 0-2 0v4c0 .45.63-.18-3 2.72V30h20v6h-3v-3a1 1 0 0 0-2 0v3a1 1 0 0 0 0 2h9.68l-1.94 7H20a1 1 0 0 0 0 2h38.18a9 9 0 0 1-8.78 7H20a1 1 0 0 0 0 2h29.4A11 11 0 0 0 60 48c3.17-11.48 3.22-11 2.8-11.6zM33 28a1 1 0 0 0 0 2h1v10H18V30h11a1 1 0 0 0 0-2H18v-8.46L20.3 18H38v10z"/></svg>
@@ -91,7 +96,7 @@ Best Price Guarantee on Tour & Cruise Packages﻿*
 </div>
 
 
-<div className='bg-white rounded-md p-4 py-8 hover:opacity-80 cursor-pointer'>
+<div className='bg-white rounded-md p-4 py-8 hover:opacity-70 cursor-pointer'>
 
     <div>
 
@@ -104,7 +109,7 @@ Best Price Guarantee on Tour & Cruise Packages﻿*
  </div>
 </div>
 
-<div className='bg-white rounded-md p-4 py-8 hover:opacity-80 cursor-pointer'>
+<div className='bg-white rounded-md p-4 py-8 hover:opacity-70 cursor-pointer'>
 
 
 <div>
@@ -121,20 +126,85 @@ Best Price Guarantee on Tour & Cruise Packages﻿*
 </div>
 </div>
 <div className='my-16'>
-<p className='text-3xl font-semibold'>Featured Experiences and Deals</p>
 
-<div className='grid grid-cols-1 lg:grid-cols-2'>
-<div>
+<p className='md:text-3xl text-2xl font-semibold'>Featured Experiences and Deals</p>
 
+<hr className="border-t border-gray-700 my-4"/>
+<div  className='grid grid-cols-1 lg:grid-cols-2 my-8 bg-white'>
+<div className=''>
+<Image className='object-cover h-full' style={{maxHeight:"490px"}}  src={Hawaii} alt='travel'></Image>
 </div>
 
-<div>
+<div className='p-8'>
 
+  <Link href="/travel" className='text-4xl font-bold hover:underline'>Hawaii Cruise</Link>
+
+  <p className='my-3'>Looking for the perfect tropical getaway? Hawaii offers a stunning blend of breathtaking beaches, 
+    lush rainforests, and volcanic landscapes. From surfing the iconic waves of Waikiki to hiking through the vibrant valleys of Kauai,
+     there's adventure around every corner. Immerse yourself in Hawaiian culture with traditional luaus or explore historic sites like Pearl Harbor.
+      Don’t miss a scenic drive on the Road to Hana or snorkeling with sea turtles in crystal-clear waters. Whether you’re seeking relaxation or excitement, 
+    Hawaii has it all—book your dream vacation today!</p>
+
+<br/>
+<br/>
+    <Link href='/tour' className='self-end justify-self-end'><button className='bg-purple-500 hover:bg-white hover:text-purple-500 hover:border-purple-500 border text-white font-bold py-2 px-8 '>Explore Sailings & Offers</button></Link>
+  
     
 </div>
 
 
 </div>
+
+</div>
+
+<div  className='grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12'>
+
+<div className='bg-white' >
+
+<Image className='object-cover w-full' style={{height:"400px"}}  src={desert} alt='travel'></Image>
+
+<div className='p-8 grid' style={{height:"400px"}}>
+
+<div>
+<h2 className='text-2xl font-bold mb-2'>Save up to 15%** on Worldwide Tours</h2>
+
+<p>Explore Europe, Ireland, Australia, Turkey, Egypt, and more on a guided vacation and save up to 15%* on select tours. 
+  On a guided vacation, you'll get personal service, attention to detail and ease, while enjoying unmissable icons and one-of-a-kind experiences.
+
+AAA Members receive up to $80* on tour credit with Trafalgar.
+
+**Terms and conditions apply.</p>
+</div>
+
+<Link href='/tour' className='self-end'><button className='bg-purple-500 hover:bg-white hover:text-purple-500 hover:border-purple-500 border text-white font-bold py-2 px-8 '>Explore Sailings & Offers</button></Link>
+  
+   
+</div>
+</div>
+
+<div className='bg-white '>
+
+<Image className='object-cover w-full' style={{height:"400px"}} src={eximg} alt='travel'></Image>
+
+<div className='p-8 grid ' style={{height:"400px"}}>
+<div>
+<h2 className='text-2xl font-bold mb-2 h-fit'>Up to 4 Category Upgrade Sale—Oceania Cruises</h2>
+
+
+<p>
+Book by September 26th and receive more luxury for less with up to a four category upgrade on select 2024-2025 sailings and enjoy an elevated suite or stateroom experience.<sup>▼</sup> Plan your cruise now on a small ship to destinations around the world.
+
+AAA Members also receive up to $200 onboard spending credit per stateroom on verandah and above staterooms booked in 2024.
+
+</p>
+</div>
+<Link href='/tour' className='self-end'><button className='bg-purple-500 hover:bg-white hover:text-purple-500 hover:border-purple-500 border text-white font-bold py-2 px-8 '>Explore Sailings & Offers</button></Link>
+  
+   
+</div>
+</div>
+
+
 </div>
 </section>
 <Footer/>
