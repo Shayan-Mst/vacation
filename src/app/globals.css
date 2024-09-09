@@ -16,10 +16,18 @@
   }
 } */
 
+:root{
+
+  --bg:#29272b;
+  --white:#bebebe;
+  --primary:#32ce9a;
+  --placeholder:#6a666c;
+}
+
 html , body ,.root{
  
    background-color: rgb(245, 243, 243);
-  height: 100%;
+   height: 100%;
   
    
 } 
@@ -960,9 +968,98 @@ h3 {
 
 /* discounts */
 
-.drive{
+/* .drive{
  
   position: relative;
+} */
+
+
+/* locations */
+/* .wrapper{
+margin-block: 1rem;
+  width: min(325px,80vw);
+  display: grid;
+  align-items: center;
+  & > *{
+grid-column: 1;
+grid-row: 1;
+font:1.1rem futura , helvetica,sans-serif;
+color: var(--white);
+  }
+  & input{
+
+    position: relative;
+    border :1.5px solid var(--white);
+    border-radius: 0.25rem;
+    outline: none;
+    background-color: transparent;
+    color: var(--white);
+    padding: 1rem;
+    z-index: 0;
+    transition: border-color 0.5s;
+    &:focus{
+      border-color: var(--primary);
+    }
+    &:focus~span,&:not(:placeholder-shown~span){
+      transform: translateY(-1.8rem);
+     transform:  scale(0.75);
+      padding: 0 0.25rem;
+      color: var(--white);
+    }
+    
+  }
+  & span{
+
+    width: max-content;
+    
+    margin-left: 1rem;
+    color: var(--placeholder);
+    transition: transform 0.5s;
+  }
+} */
+
+
+.input-container {
+  position: relative;
+  margin: 20px 0;
+  display: flex;
+}
+.input-container button{
+  border-radius: 4px;
+}
+.input-container input {
+  width: 100%;
+  padding: 12px;
+  padding-top: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #9d9b9b;
+  background-color: rgb(245, 243, 243);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-container input:focus {
+  border-color: #882ac2;
+}
+
+.input-container span {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  font-size: 16px;
+  color: #9d9b9b;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.input-container input:focus + span,
+.input-container input:not(:placeholder-shown) + span {
+  top: 0;
+  font-size: 12px;
+  background-color: rgb(245, 243, 243) ;
+  color: #882ac2;
 }
 
 @layer utilities {
