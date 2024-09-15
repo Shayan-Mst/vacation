@@ -78,23 +78,23 @@ const Sidebar = () => {
 </li>
 
 <li onClick={dropShow} className='sidebar-item'>
-<Link href="/home"  className='sidebar-link'>
+<a  className='sidebar-link'>
 <svg style={{marginLeft:"2px"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20" fill='black'><g id="Layer_2" data-name="Layer 2"><g id="layer_1-2" data-name="layer 1"><path className="cls-1" d="M48 20h-2V2H2v18H0V1a1 1 0 0 1 1-1h46a1 1 0 0 1 1 1zM47 48H1a1 1 0 0 1-1-1V26h2v20h44V26h2v21a1 1 0 0 1-1 1z"/><path className="cls-1" d="M4 4h2v2H4zM8 4h2v2H8zM12 4h2v2h-2zM1 8h46v2H1zM3 40h42v2H3zM27 31a1 1 0 0 1-.94-.65L24 24.85l-2.06 5.5a1 1 0 0 1-1.88 0l-3-8 1.88-.7 2.06 5.5 2.06-5.5a1 1 0 0 1 1.88 0l2.06 5.5 2.06-5.5 1.88.7-3 8A1 1 0 0 1 27 31zM12 31a1 1 0 0 1-.94-.65L9 24.85l-2.06 5.5a1 1 0 0 1-1.88 0l-3-8 1.88-.7L6 27.15l2.06-5.5a1 1 0 0 1 1.88 0l2.06 5.5 2.06-5.5 1.88.7-3 8A1 1 0 0 1 12 31zM42 31a1 1 0 0 1-.94-.65L39 24.85l-2.06 5.5a1 1 0 0 1-1.88 0l-3-8 1.88-.7 2.06 5.5 2.06-5.5a1 1 0 0 1 1.88 0l2.06 5.5 2.06-5.5 1.88.7-3 8A1 1 0 0 1 42 31z"/></g></g></svg>
 <span>Pages</span>
 <svg id="toggleIcon" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
       </svg>
-</Link></li>
+</a></li>
 
 <li  className={`sidebar-item ${drop?'drop--active':null}`}>
-<Link href="/home"  className='sidebar-link'>Artist</Link>
-<Link href="/home"  className='sidebar-link'>Event</Link>
-<Link href="/home"  className='sidebar-link'>Release</Link>
-<Link href="/home"  className='sidebar-link'>Product</Link>
-<Link href="/home"  className='sidebar-link'>Cart</Link>
-<Link href="/home"  className='sidebar-link'>Profile</Link>
-<Link href="/home"  className='sidebar-link'>Article</Link>
-<Link href="/home"  className='sidebar-link'>About</Link>
+<Link href="/home"  className='sidebar-link'>Home</Link>
+<Link href="/tour"  className='sidebar-link'>Tour</Link>
+<Link href="/popular-destination"  className='sidebar-link'>Popular destination</Link>
+<Link href="/contact-us"  className='sidebar-link'>Contact us</Link>
+<Link href="/travel"  className='sidebar-link'>Travel</Link>
+<Link href="/discounts"  className='sidebar-link'>Discount</Link>
+<Link href="/locations"  className='sidebar-link'>Locations</Link>
+<Link href="/community"  className='sidebar-link'>Community</Link>
 <Link href="/home"  className='sidebar-link'>Pricing Plans</Link>
 <Link href="/home"  className='sidebar-link'>Privacy Policy</Link>
 <Link href="/login"  className='sidebar-link'>Sign in</Link>

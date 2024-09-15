@@ -795,7 +795,7 @@ h3 {
   left: 0;
   bottom: 0;
   z-index: 30;
-  width: 200px;
+  width: 220px;
   transform: translateX(-100%);
   transition: transform 0.2s ease;
  
@@ -1093,6 +1093,25 @@ color: var(--white);
   transform: translateX(22px);
 }
 
+/* community */
+  /* Custom styles for slight animations */
+  .invisible {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .underline-gradient {
+    background: linear-gradient(to right, #834ade, #882ac2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 @layer utilities {
   .text-balance {
     text-wrap: balance;

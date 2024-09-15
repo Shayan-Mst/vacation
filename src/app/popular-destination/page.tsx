@@ -11,10 +11,13 @@ import jane from './../../../public/jane.jpg'
 import michael from './../../../public/michael.jpg'
 import emily from './../../../public/emily.jpg'
 import sophi from './../../../public/sophi.jpg'
+import Sidebar from '@/components/Sidebar'
 
 
 const page = () => {
   return (
+    <>
+    <Sidebar/>
     <div className='h-full relative'>
 
 <Topbar/>
@@ -146,6 +149,7 @@ adventure, or relaxation, Iran offers a unique and unforgettable experience.
 <Footer/>
 <Navigation/>
     </div>
+    </>
   )
 }
 
