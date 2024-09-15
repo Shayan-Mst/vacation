@@ -1,13 +1,14 @@
 "use client"
 import { useRouter } from "next/navigation"
-import React, { useEffect, useState } from 'react'
-
+import React from 'react'
+import {  useShow } from '@/context/context'
 
 const navigation = () => {
 
-    const [selected,setSelected] = useState(1);
+  const {selected,setSelected} = useShow();
     const router = useRouter();
 
+    console.log(selected)
    
     const goto1 = async() =>{
 
