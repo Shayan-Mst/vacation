@@ -1,5 +1,6 @@
 "use client"
 import React, { useState} from "react";
+import Navigation from "@/components/navigation";
 
 const page = () => {
 
@@ -13,7 +14,8 @@ const page = () => {
         setIsModalVisible(false);
       };
   return (
-    <div className='p-4 bg-purple-800'>
+    <>
+    <div className='bg-purple-800 h-full p-4'>
 
   <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-6">
 
@@ -127,7 +129,11 @@ const page = () => {
 
   </div>
 
+
     </div>
+
+    <Navigation/>
+    </>
   )
 }
 
