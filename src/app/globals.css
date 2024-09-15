@@ -1062,6 +1062,37 @@ color: var(--white);
   color: #882ac2;
 }
 
+/* setting */
+
+.toggle-checkbox {
+  width: 42px;
+  height: 20px;
+  appearance: none;
+  background-color: #ccc;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+.toggle-checkbox::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+.toggle-checkbox:checked {
+  background-color: #882ac2;
+}
+.toggle-checkbox:checked::before {
+  transform: translateX(22px);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
