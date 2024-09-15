@@ -13,7 +13,7 @@ const page = () => {
         setIsModalVisible(false);
       };
   return (
-    <div className='p-8 bg-purple-800'>
+    <div className='p-4 bg-purple-800'>
 
   <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-6">
 
