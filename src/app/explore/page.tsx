@@ -44,6 +44,7 @@ const page = () => {
         <>
         <Sidebar/>
         <Topbar/>
+        <div>
         <div className="min-h-screen  py-10">
           <div className="max-w-7xl mx-auto px-4">
             {/* Search Bar Section */}
@@ -86,9 +87,13 @@ const page = () => {
               ))}
             </div>
           </div>
+         
         </div>
         <Footer/>
         <Navigation/>
+        </div>
+     
+       
         </>
       );
 }
