@@ -97,6 +97,7 @@ const Sidebar = () => {
 <Link href="/community"  className='sidebar-link'>Community</Link>
 <Link href="/explore"  className='sidebar-link'>Explore</Link>
 <Link href="/privacy"  className='sidebar-link'>Privacy Policy</Link>
+<Link href="/find"  className='sidebar-link'>Find</Link>
 <Link href="/login"  className='sidebar-link'>Sign in</Link>
 
 
