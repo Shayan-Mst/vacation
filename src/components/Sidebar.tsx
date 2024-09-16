@@ -95,6 +95,7 @@ const Sidebar = () => {
 <Link href="/discounts"  className='sidebar-link'>Discount</Link>
 <Link href="/locations"  className='sidebar-link'>Locations</Link>
 <Link href="/community"  className='sidebar-link'>Community</Link>
+<Link href="/explore"  className='sidebar-link'>Explore</Link>
 <Link href="/privacy"  className='sidebar-link'>Privacy Policy</Link>
 <Link href="/login"  className='sidebar-link'>Sign in</Link>
 
