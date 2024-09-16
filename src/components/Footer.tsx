@@ -12,10 +12,10 @@ const Footer = () => {
       <div className='text-center md:text-justify justify-center grid'>
         <h3 className="text-lg font-bold mb-4">Quick Links</h3>
         <ul>
-          <li className="mb-2"><a href="#" className="">Home</a></li>
-          <li className="mb-2"><a href="#" className="">Destinations</a></li>
-          <li className="mb-2"><a href="#" className="">Tours</a></li>
-          <li className="mb-2"><a href="#" className="">Contact Us</a></li>
+          <li className="mb-2"><a href="/home" className="">Home</a></li>
+          <li className="mb-2"><a href="/popular-destination" className="">Destinations</a></li>
+          <li className="mb-2"><a href="/tour" className="">Tours</a></li>
+          <li className="mb-2"><a href="/contact-us" className="">Contact Us</a></li>
         </ul>
       </div>
 
@@ -25,10 +25,10 @@ const Footer = () => {
       <div className='text-center md:text-justify justify-center grid'>
       <h3 className="text-lg font-bold mb-4">About Us</h3>
         <ul>
-          <li className="mb-2"><a href="#" className="">Our Story</a></li>
-          <li className="mb-2"><a href="#" className="">Community</a></li>
-          <li className="mb-2"><a href="#" className="">Leadership Team</a></li>
-          <li className="mb-2"><a href="#" className="">New Releases</a></li>
+          <li className="mb-2"><a href="/community" className="">Our Story</a></li>
+          <li className="mb-2"><a href="/community" className="">Community</a></li>
+          <li className="mb-2"><a href="/community" className="">Leadership Team</a></li>
+          <li className="mb-2"><a href="/community" className="">New Releases</a></li>
         </ul>
       </div>
 
