@@ -14,7 +14,7 @@ import sophi from './../../../public/sophi.jpg'
 import Sidebar from '@/components/Sidebar'
 
 
-const page = () => {
+const Page = () => {
   return (
     <>
     <Sidebar/>
@@ -153,4 +153,4 @@ adventure, or relaxation, Iran offers a unique and unforgettable experience.
   )
 }
 
-export default page
+export default Page

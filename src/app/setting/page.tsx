@@ -2,7 +2,7 @@
 import React, { useState} from "react";
 import Navigation from "@/components/Navig";
 
-const page = () => {
+const Page = () => {
 
     const [isModalVisible, setIsModalVisible] = useState(false);
     
@@ -137,4 +137,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

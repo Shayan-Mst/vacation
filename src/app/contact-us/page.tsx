@@ -5,7 +5,7 @@ import Topbar from '@/components/Topbar'
 import Navigation from '@/components/Navig'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   return (
     <>
     <Sidebar/>
@@ -14,7 +14,7 @@ const page = () => {
         <div >
         <section data-trk="Dynoblock > Section" data-trk-block="Section" data-testid="block-section"  className='py-12 px-6 sm:px-12 md:px-16'>
             <div data-testid="block-text" data-trk="Text" data-trk-block="Text"  className="section__content"><div className="text__container"><div><h2 className='text-3xl font-bold' style={{letterSpacing:"-1px"}}>Need road service right now? Call 800-BBB-HELP (800-222-4357)<br/></h2>
-            <p className='mt-8 text-lg'>we are here to help you. If you need assistance with your Membership or if you're looking for advice, answers, or tips on using one of our products, contact us by phone or&nbsp;email,&nbsp;or search our&nbsp;<a href="/search-frequently-asked-questions">frequently asked questions</a>.</p>
+            <p className='mt-8 text-lg'>we are here to help you. If you need assistance with your Membership or if you are looking for advice, answers, or tips on using one of our products, contact us by phone or&nbsp;email,&nbsp;or search our&nbsp;<a href="/search-frequently-asked-questions">frequently asked questions</a>.</p>
             </div></div></div></section>
 
             <section className='bg-gray-200 py-12 px-6 sm:px-12 md:px-16 my-6'>
@@ -129,4 +129,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -18,7 +18,7 @@ import neon from './../../../public/neon.jpg'
 import boat from './../../../public/boat.jpg'
 
 
-const page = () => {
+const Page = () => {
 
 
   // swap collection
@@ -337,4 +337,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

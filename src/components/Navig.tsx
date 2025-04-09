@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation"
 import React from 'react'
 import {  useShow } from '@/context/context'
 
-const navigation = () => {
+const Navigation = () => {
 
   const {selected,setSelected} = useShow();
     const router = useRouter();
@@ -104,4 +104,4 @@ const navigation = () => {
   )
 }
 
-export default navigation
+export default Navigation

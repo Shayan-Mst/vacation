@@ -5,7 +5,7 @@ import Topbar from '@/components/Topbar';
 import Navigation from '@/components/Navig';
 import React from 'react'
 
-const page = () => {
+const Page = () => {
     const tourPackages = [
         {
           title: "Bali Adventure",
@@ -98,4 +98,4 @@ const page = () => {
       );
 }
 
-export default page
+export default Page

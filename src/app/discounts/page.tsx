@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 import Sidebar from '@/components/Sidebar'
 import Link from 'next/link'
 
-const page = () => {
+const Page = () => {
   return (
     <>
     <Sidebar/>
@@ -92,4 +92,4 @@ Frames plus prescription lenses</p>
   )
 }
 
-export default page
+export default Page

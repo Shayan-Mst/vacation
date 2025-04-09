@@ -4,9 +4,9 @@ import Sidebar from '@/components/Sidebar'
 import Topbar from '@/components/Topbar'
 import Navigation from '@/components/Navig'
 
-import React, { useEffect, useRef } from 'react'
+import React, {  useRef } from 'react'
 
-const page = () => {
+const Page = () => {
 
 
     const elementsRef = useRef<(HTMLElement | null)[]>([]);
@@ -62,7 +62,7 @@ const page = () => {
           </h2>
           <div className="max-w-4xl mx-auto mt-8 text-gray-600 text-lg md:text-xl text-center">
             <p>
-              At <strong>TravelEase</strong>, we are dedicated to crafting unforgettable journeys for travelers worldwide. Whether you're seeking adventure, relaxation, or cultural immersion, our team is committed to making your travel dreams a reality.
+              At <strong>TravelEase</strong>, we are dedicated to crafting unforgettable journeys for travelers worldwide. Whether you are seeking adventure, relaxation, or cultural immersion, our team is committed to making your travel dreams a reality.
             </p>
           </div>
         </section>
@@ -140,4 +140,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

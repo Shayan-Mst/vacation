@@ -1,7 +1,7 @@
 
 "use client"
 import React from 'react'
-import Navigation from '@/components/Navig'
+import Navig from '@/components/Navig'
 import Image from 'next/image'
 import ocean from './../../../public/ocean.jpg'
 import mountain from './../../../public/mountain.jpg'
@@ -18,7 +18,7 @@ import Footer from '@/components/Footer'
 import Link from 'next/link'
 import Sidebar from '@/components/Sidebar'
 
-const page = () => {
+const Page = () => {
 
    const navigation  = useRouter();
 
@@ -98,7 +98,7 @@ const page = () => {
     <figure onClick={Navigate} className="figure-container">
       <Image  src={leopard} alt='leopard'></Image>
       <figcaption className="figure-caption">
-        <h2 className="text-md font-bold">Natures's Call</h2>
+        <h2 className="text-md font-bold">Natures Call</h2>
         <p className='text-sm'>Wildness Lodge 19/07/2024</p>
       </figcaption>
     </figure>
@@ -199,10 +199,10 @@ const page = () => {
 </div>
 
 <Footer/>
-<Navigation/>
+<Navig/>
     </div>
     </>
   )
 }
 
-export default page
+export default Page

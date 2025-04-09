@@ -6,7 +6,7 @@ import { FormEvent, useEffect, useState } from "react"
 import account from '../account.json'
 import { useRouter } from "next/navigation"
 
-const page = () => {
+const Page = () => {
 
   const [eye,setEye] = useState(false)
   const [email,setEmail] = useState('')
@@ -158,4 +158,4 @@ else{
   )
 }
 
-export default page
+export default Page

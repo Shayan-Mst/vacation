@@ -5,7 +5,7 @@ import Topbar from '@/components/Topbar';
 import Navigation from '@/components/Navig';
 import React, { useState } from 'react'
 
-const page = () => {
+const Page = () => {
 
     const [expanded, setExpanded] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
@@ -101,4 +101,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

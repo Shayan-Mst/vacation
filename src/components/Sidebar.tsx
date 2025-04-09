@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Sidebar = () => {
     
-  const [active,setActive] = useState('');
+  const [active] = useState('');
   const [drop,setDrop] = useState(false);
   
 

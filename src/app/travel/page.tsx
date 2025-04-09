@@ -10,7 +10,7 @@ import desert from "./../../../public/rock.jpg"
 import eximg from "./../../../public/trail.jpg"
 import Link from 'next/link'
 
-const page = () => {
+const Page = () => {
   return (
   <>
   <Sidebar/>
@@ -141,8 +141,8 @@ Best Price Guarantee on Tour & Cruise Packages﻿*
 
   <p className='my-3'>Looking for the perfect tropical getaway? Hawaii offers a stunning blend of breathtaking beaches, 
     lush rainforests, and volcanic landscapes. From surfing the iconic waves of Waikiki to hiking through the vibrant valleys of Kauai,
-     there's adventure around every corner. Immerse yourself in Hawaiian culture with traditional luaus or explore historic sites like Pearl Harbor.
-      Don’t miss a scenic drive on the Road to Hana or snorkeling with sea turtles in crystal-clear waters. Whether you’re seeking relaxation or excitement, 
+     there is adventure around every corner. Immerse yourself in Hawaiian culture with traditional luaus or explore historic sites like Pearl Harbor.
+      Dont miss a scenic drive on the Road to Hana or snorkeling with sea turtles in crystal-clear waters. Whether you are seeking relaxation or excitement, 
     Hawaii has it all—book your dream vacation today!</p>
 
 <br/>
@@ -169,7 +169,7 @@ Best Price Guarantee on Tour & Cruise Packages﻿*
 <h2 className='text-2xl font-bold mb-2'>Save up to 15%** on Worldwide Tours</h2>
 
 <p>Explore Europe, Ireland, Australia, Turkey, Egypt, and more on a guided vacation and save up to 15%* on select tours. 
-  On a guided vacation, you'll get personal service, attention to detail and ease, while enjoying unmissable icons and one-of-a-kind experiences.
+  On a guided vacation, you will get personal service, attention to detail and ease, while enjoying unmissable icons and one-of-a-kind experiences.
 
 AAA Members receive up to $80* on tour credit with Trafalgar.
 
@@ -214,4 +214,4 @@ AAA Members also receive up to $200 onboard spending credit per stateroom on ver
   )
 }
 
-export default page
+export default Page

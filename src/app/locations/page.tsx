@@ -7,7 +7,7 @@ import React, { useEffect, useRef } from 'react'
 import L from "leaflet";
 import 'leaflet/dist/leaflet.css';
 
-const page = () => {
+const Page = () => {
 
     interface Place {
         name: string;
@@ -153,4 +153,4 @@ const locationIconUrl = 'https://img.icons8.com/ios/50/ff0000/marker.png'; // So
   )
 }
 
-export default page
+export default Page

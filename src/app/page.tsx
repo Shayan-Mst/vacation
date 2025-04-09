@@ -45,7 +45,7 @@ export default function Home() {
     <div className="text-center w-1/2 px-6">
 
     <div className="lg:text-4xl md:text-3xl font-bold  mt-14">Discover Your Next</div>
-<div className=" text-md  mt-8 ">Explore new destinations and create unforgettable memories. Whether you're seeking adventure in the mountains, relaxation on pristine beaches, the world is waiting to be discovered!</div>
+<div className=" text-md  mt-8 ">Explore new destinations and create unforgettable memories. Whether you are seeking adventure in the mountains, relaxation on pristine beaches, the world is waiting to be discovered!</div>
     <Link href='/login'><button className=' bg-gray-300 shadow-lg p-4 rounded-lg my-16 font-bold lg:w-1/2 md:w-2/3 text-btn'>Explore</button></Link>
 
     </div>

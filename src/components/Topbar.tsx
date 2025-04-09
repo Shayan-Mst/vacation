@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 
 const Topbar = () => {
 
-const {show,setShow} = useShow();
+const {setShow} = useShow();
 const sideRef = useRef(null);
 
 
