@@ -1,6 +1,6 @@
 "use client"
 import Topbar from '@/components/Topbar'
-import Naavigation from '@/components/navigation'
+import Naavigation from '@/components/Navig'
 import Footer from '@/components/Footer'
 import Sidebar from '@/components/Sidebar'
 import React, { useEffect } from 'react'

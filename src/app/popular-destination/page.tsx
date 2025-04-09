@@ -1,7 +1,7 @@
 "use client"
 import Footer from '@/components/Footer'
 import Topbar from '@/components/Topbar'
-import Navigation from '@/components/navigation'
+import Navigation from '@/components/Navig'
 import Image from 'next/image'
 import React from 'react'
 import rock from './../../../public/rock.jpg'

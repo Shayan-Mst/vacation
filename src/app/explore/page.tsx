@@ -2,7 +2,7 @@
 import Footer from '@/components/Footer';
 import Sidebar from '@/components/Sidebar';
 import Topbar from '@/components/Topbar';
-import Navigation from '@/components/navigation';
+import Navigation from '@/components/Navig';
 import React from 'react'
 
 const page = () => {

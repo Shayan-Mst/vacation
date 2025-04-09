@@ -1,7 +1,7 @@
 
 "use client"
 import React from 'react'
-import Navigation from '@/components/navigation'
+import Navigation from '@/components/Navig'
 import Image from 'next/image'
 import ocean from './../../../public/ocean.jpg'
 import mountain from './../../../public/mountain.jpg'

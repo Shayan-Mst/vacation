@@ -3,7 +3,7 @@ import Image from "next/image"
 import login from './../../../public/login.jpg'
 import bglogin from './../../../public/bg-login.jpg'
 import { FormEvent, useEffect, useState } from "react"
-import account from './../account.json'
+import account from '../account.json'
 import { useRouter } from "next/navigation"
 
 const page = () => {

@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Navigation from '@/components/navigation'
+import Navigation from '@/components/Navig'
 import Topbar from '@/components/Topbar'
 import Footer from '@/components/Footer'
 import Sidebar from '@/components/Sidebar'

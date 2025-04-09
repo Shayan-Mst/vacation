@@ -2,7 +2,7 @@
 import Footer from '@/components/Footer'
 import Sidebar from '@/components/Sidebar'
 import Topbar from '@/components/Topbar'
-import Navigation from '@/components/navigation'
+import Navigation from '@/components/Navig'
 import React, { useEffect, useRef } from 'react'
 import L from "leaflet";
 import 'leaflet/dist/leaflet.css';
