@@ -3,12 +3,11 @@ import Topbar from '@/components/Topbar'
 import Naavigation from '@/components/Navig'
 import Footer from '@/components/Footer'
 import Sidebar from '@/components/Sidebar'
-import React, { useEffect } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import mountain from './../../../public/mountain.jpg'
-import Swiper from 'swiper';
-import { Pagination , Navigation } from 'swiper/modules'
+import Swipercomp  from '@/components/Swipercomp'
 import 'swiper/swiper-bundle.css';
 import ocean from './../../../public/ocean.jpg'
 import trail from "./../../../public/trail.jpg"
@@ -23,51 +22,11 @@ const Page = () => {
 
   // swap collection
 
-  useEffect(() => {
-    // Only run on client-side
-    if (typeof window !== 'undefined') {
-      // Dynamically import Swiper and its modules
-      Swiper.use([Navigation, Pagination]);
-
-      new Swiper('.multiple-slide-carousel', {
-       
-        slidesPerView: 4,
-        spaceBetween: 20,
-        
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-          1920: {
-            slidesPerView: 6,
-            spaceBetween: 30,
-          },
-          1300: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          990: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-
-          640:{
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          0:{
-            slidesPerView: 1,
-            spaceBetween: 0,
-          }
-        },
-      });
-    }
-  }, []);
-
+ 
   
   return (
     <>
+    <Swipercomp/>
    <Sidebar/>
     <div className='h-full relative'>
 

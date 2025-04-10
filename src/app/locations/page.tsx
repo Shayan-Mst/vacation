@@ -4,32 +4,40 @@ import Sidebar from '@/components/Sidebar'
 import Topbar from '@/components/Topbar'
 import Navigation from '@/components/Navig'
 import React, { useEffect, useRef } from 'react'
-import L from "leaflet";
 import 'leaflet/dist/leaflet.css';
+
+
+
+
+
+interface Place {
+  name: string;
+  coordinates: [number, number];
+  description: string;
+}
+
 
 const Page = () => {
 
-    interface Place {
-        name: string;
-        coordinates: [number, number];
-        description: string;
-      }
-      
-      const places: Place[] = [
-        { name: 'Los Angeles', coordinates: [34.0522, -118.2437], description: 'City of Angels' },
-        { name: 'San Francisco', coordinates: [37.7749, -122.4194], description: 'Golden Gate Bridge' },
-        { name: 'San Diego', coordinates: [32.7157, -117.1611], description: 'Beautiful Beaches' },
-        { name: 'Sacramento', coordinates: [38.58, -121.49], description: 'California’s Capital' },
-        { name: 'Fresno', coordinates: [36.7378, -119.7871], description: 'Agricultural Hub' }
-      ];
-      
-      // URL for a solid red location icon image
+
+  
+  const places: Place[] = [
+    { name: 'Los Angeles', coordinates: [34.0522, -118.2437], description: 'City of Angels' },
+    { name: 'San Francisco', coordinates: [37.7749, -122.4194], description: 'Golden Gate Bridge' },
+    { name: 'San Diego', coordinates: [32.7157, -117.1611], description: 'Beautiful Beaches' },
+    { name: 'Sacramento', coordinates: [38.58, -121.49], description: 'California’s Capital' },
+    { name: 'Fresno', coordinates: [36.7378, -119.7871], description: 'Agricultural Hub' }
+  ];
+  
+  // URL for a solid red location icon image
 const locationIconUrl = 'https://img.icons8.com/ios/50/ff0000/marker.png'; // Solid red icon URL
 
-    const mapRef = useRef<L.Map | null>(null);
+const mapRef = useRef<any>(null);
+   useEffect(()=>{
 
-
-    useEffect(() => {
+    async function mapLoader (){
+      if (typeof window !== "undefined") {
+      const  L = await import('leaflet')
         if (mapRef.current) return; // If map is already initialized, return early
     
         const map = L.map('map').setView([36.7783, -119.4179], 6); // Centered in California with zoom level 6
@@ -51,15 +59,17 @@ const locationIconUrl = 'https://img.icons8.com/ios/50/ff0000/marker.png'; // So
               .bindPopup(`<b>${place.name}</b><br>${place.description}`);
           });
       
+      
     
-        // Cleanup function to remove map when component unmounts
-        return () => {
-          if (mapRef.current) {
-            mapRef.current.remove();
-            mapRef.current = null;
-          }
-        };
-      }, []);
+      }
+    }
+   
+    mapLoader()
+  
+   },[])
+ 
+    
+
 
   return (
     <>
@@ -141,7 +151,7 @@ const locationIconUrl = 'https://img.icons8.com/ios/50/ff0000/marker.png'; // So
     <button className='py-3 sm:px-12 px-6 bg-purple-600 ml-4 text-white '>Search</button>
   </div>
 
-<div  id="map" style={{ width: '100%', height: '500px',zIndex:"1" }} />
+<div   id="map" style={{ width: '100%', height: '500px',zIndex:"1" }} />
 
 </div>
 </section>
@@ -154,3 +164,4 @@ const locationIconUrl = 'https://img.icons8.com/ios/50/ff0000/marker.png'; // So
 }
 
 export default Page
+

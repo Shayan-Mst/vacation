@@ -9,8 +9,8 @@ import { useRouter } from "next/navigation"
 const Page = () => {
 
   const [eye,setEye] = useState(false)
-  const [email,setEmail] = useState('')
-  const [password,setPassword] = useState('')
+  const [email,setEmail] = useState('example@gmail.com')
+  const [password,setPassword] = useState('12345678')
   const [error,setError] = useState(false);
   const [loader,setLoader] = useState(false)
   const [success,setSuccess] = useState(false);
@@ -109,7 +109,7 @@ else{
         email or password is incorrect</label> : null}
      
       </div>
-      <input value={email} onChange={(e)=>setEmail(e.target.value)} className="bg-gray-100" type="email" id="email" name="email" placeholder="example@gmail.com" required/>
+      <input  value={email} onChange={(e)=>setEmail(e.target.value)} className="bg-gray-100" type="email" id="email" name="email" placeholder="example@gmail.com" required/>
     </div>
     <div className="form-group">
       <label className="text-sm" htmlFor="password">Password</label>
@@ -145,6 +145,7 @@ else{
 </button>
 
 </div>
+{/* <div><span className="text-xs">email : example@gmail.com password : 12345678</span></div> */}
   </form>
 </div>
 
